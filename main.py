@@ -7,13 +7,10 @@ model = pickle.load(open('T05_InsuranceModel.pkl', 'rb'))
 
 app = Flask(__name__)
 
-str = "HELLO THIS IS ARYAN PRAJAPATI\nDeployed DL model to PREDICT Health Insurance COST"
-
 
 @app.route('/')
 def home():
-    predictInsuranceCost()
-    return str
+    return predictInsuranceCost()
 
 
 @app.route('/predictInsuranceCost', methods=['GET'])
