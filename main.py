@@ -10,10 +10,10 @@ app = Flask(__name__)
 
 @app.route('/')
 def home():
-    return "Hello Aryan Prajapati"
+    return predictInsuranceCost()
 
 
-@app.route('/predictInsuranceCost', methods=['POST'])
+@app.route('/predictInsuranceCost', methods=['GET'])
 def predictInsuranceCost():
     age = request.form.get('age')
     sex = request.form.get('sex')
