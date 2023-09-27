@@ -14,7 +14,7 @@ def home():
            "INSURANCE COST\n WHERE INPUT FEATURES IS -> [AGE, SEX, BMI, No OF CHILDREN'S HAVE, SMOKER]"
 
 
-@app.route('/predictInsuranceCost', methods=['GET'])
+@app.route('/predictInsuranceCost', methods=['POST'])
 def predictInsuranceCost():
     age = request.form.get('age')
     sex = request.form.get('sex')
