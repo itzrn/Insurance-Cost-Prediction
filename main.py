@@ -10,7 +10,8 @@ app = Flask(__name__)
 
 @app.route('/')
 def home():
-    return predictInsuranceCost()
+    return "HELLO WORLD : THIS IS ARYAN PRAJAPATI\nDEPLOYED A DL MODEL FOR PRACTICE\nTHIS MODEL PREDICT HEALTH " \
+           "INSURANCE COST\n WHERE INPUT FEATURES IS -> [AGE, SEX, BMI, No OF CHILDREN'S HAVE, SMOKER]"
 
 
 @app.route('/predictInsuranceCost', methods=['GET'])
