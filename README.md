@@ -1,6 +1,6 @@
 # Insurance-Cost-Prediction
  
-- This is an API, made using flask.
+- This is an Rest API, made using flask.
 - This model is Deployed on render.com
 - App is also here in the same repo.
 - link for app -> https://github.com/itzrn/AndroidDevelopmentWithJava/tree/main/InsuranceApp
